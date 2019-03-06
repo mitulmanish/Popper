@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Popper_Example' do
+  pod 'Popper', :path => '../'
+
+  target 'Popper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
