@@ -1,0 +1,6 @@
+framework module Popper {
+  umbrella header "Popper-umbrella.h"
+
+  export *
+  module * { export * }
+}

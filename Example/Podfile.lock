@@ -1,0 +1,16 @@
+PODS:
+  - Popper (0.1.0)
+
+DEPENDENCIES:
+  - Popper (from `../`)
+
+EXTERNAL SOURCES:
+  Popper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Popper: 01a1f3d6efe87c94ef4ca2b492d107f876a31d4b
+
+PODFILE CHECKSUM: 79568ded6dc15bea44f115ffb332be8ba64416dc
+
+COCOAPODS: 1.6.1
