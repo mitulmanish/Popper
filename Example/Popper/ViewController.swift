@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         newVC.modalPresentationStyle = .custom
         present(newVC, animated: true, completion: nil)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 class DraggableViewController: UIViewController {

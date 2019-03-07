@@ -19,12 +19,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Feh-J5-FW8" customClass="CurvedButton" customModule="Popper_Example" customModuleProvider="target">
-                                <rect key="frame" x="157.5" y="318.5" width="60" height="30"/>
+                                <rect key="frame" x="112.5" y="182.5" width="150" height="30"/>
                                 <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="A3M-QV-xbY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="A3M-QV-xbY"/>
                                 </constraints>
-                                <state key="normal" title="Show">
+                                <state key="normal" title="Show Me Fruits">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -32,9 +32,9 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.44809503424657532" alpha="0.35712756849315069" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Feh-J5-FW8" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="9qM-Ty-0eK"/>
+                            <constraint firstItem="Feh-J5-FW8" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" constant="-136" id="9qM-Ty-0eK"/>
                             <constraint firstItem="Feh-J5-FW8" firstAttribute="centerX" secondItem="DD5-mb-cCc" secondAttribute="centerX" id="dSt-CV-LFB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DD5-mb-cCc"/>
