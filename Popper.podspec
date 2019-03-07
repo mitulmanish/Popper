@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Popper'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'A Pull Up Controller for presenting Draggable View Controller'
   s.description      = "This Presentation Controller gives you the ability to vertically drag the modally presented View Controller"
   s.homepage         = 'https://github.com/mitulmanish/Popper'

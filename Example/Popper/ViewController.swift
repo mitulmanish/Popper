@@ -13,11 +13,11 @@ class ViewController: UIViewController {
     private var animator: UIViewControllerTransitioningDelegate?
     
     @IBAction func buttonTouched(_ sender: UIButton) {
-        let newVC = DraggableViewController()
+        let fruitsViewController = DraggableViewController()
         animator = DraggableTransitionDelegate()
-        newVC.transitioningDelegate = animator
-        newVC.modalPresentationStyle = .custom
-        present(newVC, animated: true, completion: nil)
+        fruitsViewController.transitioningDelegate = animator
+        fruitsViewController.modalPresentationStyle = .custom
+        present(fruitsViewController, animated: true, completion: .none)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
