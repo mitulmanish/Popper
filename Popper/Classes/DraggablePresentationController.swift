@@ -71,7 +71,7 @@ public class DraggablePresentationController: UIPresentationController {
         animate(to: .open)
     }
     
-    @objc func receivedTouch(tapRecognizer: UITapGestureRecognizer) {
+    @objc private func receivedTouch(tapRecognizer: UITapGestureRecognizer) {
         let touchPointInPresentedView = tapRecognizer.location(in: presentedView)
         guard presentedView?.bounds.contains(touchPointInPresentedView) == false else { return }
         presentedViewController.dismiss(animated: true, completion: nil)
@@ -124,7 +124,7 @@ public class DraggablePresentationController: UIPresentationController {
         }
     }
     
-    func getDraggablePosition() -> DraggablePosition {
+    private func getDraggablePosition() -> DraggablePosition {
         let distanceFromBottom = maxFrame.height - presentedViewOriginY
         
         switch dragDirection {
