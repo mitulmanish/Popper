@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/Popper.svg?style=flat)](https://cocoapods.org/pods/Popper)
 [![Platform](https://img.shields.io/cocoapods/p/Popper.svg?style=flat)](https://cocoapods.org/pods/Popper)
 
-## What is does ?
+## What it does ?
 
 `Popper` helps you create a draggable View Controller.
 
@@ -24,10 +24,6 @@ For example:
 <img src="https://firebasestorage.googleapis.com/v0/b/instafire-8f7b1.appspot.com/o/Crypt.png?alt=media&token=61481727-50d3-4ec4-a45f-3c25a36ea648)" width="200" height="400">
 
 It can be seen in the screenshot above 👆🏼, the selection from the coin list, is reflected on the backing view
-
-## Using `Popper`
-
-
 
 ## Example
 
@@ -49,6 +45,32 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Setup
 
+Start of by creating a `Animator` class
+
+```
+import UIKit
+import Popper
+
+class DraggableTransitionDelegate: NSObject, UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return DraggablePresentationController(presentedViewController: presented, presenting: source)
+    }
+}
+```
+
+Now we will use the `Animator` class as a `transitionDelegate` for the presented view controller
+
+example:
+
+```
+        let fruitsViewController = DraggableViewController()
+        animator = DraggableTransitionDelegate()
+        fruitsViewController.transitioningDelegate = animator
+        fruitsViewController.modalPresentationStyle = .custom
+        present(fruitsViewController, animated: true, completion: .none)
+```
+
+Now you are all set.
 
 ## Installation
 
