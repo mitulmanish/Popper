@@ -16,6 +16,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		D4A109B91979E05EDB57F9FD /* Pods_Popper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619482DB0E93B04040096818 /* Pods_Popper_Tests.framework */; };
 		DD97D2D122300FBE004A72B5 /* DraggableTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97D2D022300FBE004A72B5 /* DraggableTransitionDelegate.swift */; };
+		DD97D2D92230E1CF004A72B5 /* CurvedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97D2D82230E1CF004A72B5 /* CurvedButton.swift */; };
+		DD97D2DB2230E1F2004A72B5 /* UIViiew+roundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD97D2DA2230E1F2004A72B5 /* UIViiew+roundedCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		619482DB0E93B04040096818 /* Pods_Popper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Popper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DBF52B04C99065C225ED9D /* Pods-Popper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popper_Example.debug.xcconfig"; path = "Target Support Files/Pods-Popper_Example/Pods-Popper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DD97D2D022300FBE004A72B5 /* DraggableTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableTransitionDelegate.swift; sourceTree = "<group>"; };
+		DD97D2D82230E1CF004A72B5 /* CurvedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedButton.swift; sourceTree = "<group>"; };
+		DD97D2DA2230E1F2004A72B5 /* UIViiew+roundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViiew+roundedCorners.swift"; sourceTree = "<group>"; };
 		F4B204F4069EDD28E4D39699 /* Popper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Popper.podspec; path = ../Popper.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -122,6 +126,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				DD97D2D82230E1CF004A72B5 /* CurvedButton.swift */,
+				DD97D2DA2230E1F2004A72B5 /* UIViiew+roundedCorners.swift */,
 			);
 			name = "Example for Popper";
 			path = Popper;
@@ -215,10 +221,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RNF8E69GKB;
 						LastSwiftMigration = 1010;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RNF8E69GKB;
 						LastSwiftMigration = 1010;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -337,8 +345,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD97D2DB2230E1F2004A72B5 /* UIViiew+roundedCorners.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				DD97D2D92230E1CF004A72B5 /* CurvedButton.swift in Sources */,
 				DD97D2D122300FBE004A72B5 /* DraggableTransitionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -476,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -489,6 +499,7 @@
 			baseConfigurationReference = 95DBF52B04C99065C225ED9D /* Pods-Popper_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RNF8E69GKB;
 				INFOPLIST_FILE = Popper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,6 +515,7 @@
 			baseConfigurationReference = 2BE6AB2B3320EE6F17FC923B /* Pods-Popper_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RNF8E69GKB;
 				INFOPLIST_FILE = Popper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -518,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 48D1AE91AD82132DFA366154 /* Pods-Popper_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RNF8E69GKB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -539,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2ED434A9528BA691BE3DB764 /* Pods-Popper_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = RNF8E69GKB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

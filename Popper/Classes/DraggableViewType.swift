@@ -6,7 +6,7 @@
 //
 
 public protocol DraggableViewType: class {
+    var scrollView: UIScrollView { get }
     func dismissKeyboard()
     func handleInteraction(enabled: Bool)
-    var scrollView: UIScrollView { get }
 }

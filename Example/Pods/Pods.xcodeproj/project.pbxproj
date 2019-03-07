@@ -145,10 +145,10 @@
 		4796CBDBF24426386E441D9EADFD71A3 /* Popper */ = {
 			isa = PBXGroup;
 			children = (
-				DD97D2D42230129E004A72B5 /* DraggablePosition.swift */,
-				DD97D2CE22300E0A004A72B5 /* DraggablePresentationController.swift */,
-				DD97D2D6223012D9004A72B5 /* DraggableViewType.swift */,
 				DD97D2D22230126E004A72B5 /* DragDirection.swift */,
+				DD97D2D42230129E004A72B5 /* DraggablePosition.swift */,
+				DD97D2D6223012D9004A72B5 /* DraggableViewType.swift */,
+				DD97D2CE22300E0A004A72B5 /* DraggablePresentationController.swift */,
 				442BFF9F3EDD4098FAED00C12DC7CCF5 /* Pod */,
 				626CA51B626D8869DEAFFD813F262C24 /* Support Files */,
 			);

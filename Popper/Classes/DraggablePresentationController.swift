@@ -4,13 +4,12 @@
 //
 //  Created by Mitul Manish on 7/3/19.
 //
-
-private extension CGFloat {
+extension CGFloat {
     static let springDampingRatio: CGFloat = 0.7
     static let springInitialVelocityY: CGFloat =  10
 }
 
-private extension Double {
+extension TimeInterval {
     static let animationDuration: Double = 0.3
 }
 
@@ -68,12 +67,13 @@ public class DraggablePresentationController: UIPresentationController {
         panOnPresented = UIPanGestureRecognizer(target: self, action: #selector(userDidPan(panRecognizer:)))
         presentedView?.addGestureRecognizer(panOnPresented)
         containerViewGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(receivedTouch))
-        containerViewGestureRecognizer.delegate = self
         containerView?.addGestureRecognizer(containerViewGestureRecognizer)
         animate(to: .open)
     }
     
     @objc func receivedTouch(tapRecognizer: UITapGestureRecognizer) {
+        let touchPointInPresentedView = tapRecognizer.location(in: presentedView)
+        guard presentedView?.bounds.contains(touchPointInPresentedView) == false else { return }
         presentedViewController.dismiss(animated: true, completion: nil)
     }
     
@@ -158,13 +158,5 @@ public class DraggablePresentationController: UIPresentationController {
             self.draggablePosition = position
         }
         animator.startAnimation()
-    }
-}
-
-@available(iOS 10, *)
-extension DraggablePresentationController: UIGestureRecognizerDelegate {
-    private func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        let touchPoint = touch.location(in: presentedView)
-        return presentedView?.bounds.contains(touchPoint) == false
     }
 }
